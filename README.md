@@ -1,8 +1,6 @@
-# CONCILI.IA OS
-Launcher premium para centralizar los módulos de conciliación.
+# CONCILI.IA OS - Tema Claro
+Versión con fondo blanco profesional, dock lateral morado tornasol y módulos personalizados.
 
-Archivos:
+Sube a GitHub Pages:
 - index.html
 - mobility-ado-logo.png
-
-Sube ambos archivos a la raíz de tu repositorio de GitHub Pages.
