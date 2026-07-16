@@ -5,11 +5,11 @@
 <title>CONCILI.IA | Centro de Conciliaciones</title>
 <style>
 *{box-sizing:border-box} body{margin:0;font-family:Inter,Segoe UI,Arial,sans-serif;color:#fff;background:
-radial-gradient(circle at 15% 15%,#5b126f55,transparent 32%),
-radial-gradient(circle at 85% 80%,#39115d55,transparent 35%),#100d16;min-height:100vh}
-.shell{min-height:100vh;display:flex}.dock{width:92px;background:#17131dcc;border-right:1px solid #ffffff12;
+radial-gradient(circle at 15% 10%,#24324a66,transparent 34%),
+radial-gradient(circle at 90% 85%,#351f4260,transparent 38%),#0b1018;min-height:100vh}
+.shell{min-height:100vh;display:flex}.dock{width:92px;background:#0d1420e8;border-right:1px solid #ffffff12;
 backdrop-filter:blur(18px);display:flex;flex-direction:column;align-items:center;padding:24px 12px;gap:16px;position:fixed;inset:0 auto 0 0}
-.brand-dot{width:58px;height:58px;border-radius:17px;background:linear-gradient(145deg,#8a168f,#e50032);
+.brand-dot{width:58px;height:58px;border-radius:17px;background:linear-gradient(145deg,#25364f,#71345f);
 display:grid;place-items:center;font-weight:900;font-size:22px;box-shadow:0 12px 35px #8a168f55;margin-bottom:16px}
 .dock a{width:58px;height:58px;border-radius:16px;background:#ffffff0b;border:1px solid #ffffff12;display:grid;
 place-items:center;text-decoration:none;font-size:25px;transition:.2s}.dock a:hover{transform:translateY(-3px);background:#ffffff18}
@@ -17,11 +17,16 @@ main{margin-left:92px;width:calc(100% - 92px);padding:42px 6vw 55px}.top{display
 .logo{width:min(560px,52vw);max-height:135px;object-fit:contain;object-position:left center}
 .badge{padding:9px 15px;border:1px solid #ffffff20;border-radius:99px;color:#d8cce1;background:#ffffff08;font-size:13px}
 .hero{margin:58px 0 32px}.hero h1{font-size:clamp(35px,5vw,68px);margin:0;letter-spacing:-2px}
-.hero h1 span{background:linear-gradient(90deg,#b72bb7,#ff244d);-webkit-background-clip:text;color:transparent}
+.hero h1 span{background:linear-gradient(90deg,#b8c7df,#d4a6c8);-webkit-background-clip:text;color:transparent}
 .hero p{color:#bdb3c7;font-size:18px;max-width:700px;line-height:1.6}
 .grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
 .card{position:relative;min-height:230px;border-radius:28px;padding:28px;text-decoration:none;color:white;overflow:hidden;
-background:linear-gradient(145deg,#211928,#15111b);border:1px solid #ffffff13;box-shadow:0 18px 50px #0005;transition:.25s}
+background:linear-gradient(145deg,var(--c1),var(--c2));border:1px solid var(--border);box-shadow:0 18px 50px #0007;transition:.25s}
+.card .tag{display:inline-block;margin-top:18px;padding:6px 10px;border-radius:999px;font-size:11px;letter-spacing:.7px;text-transform:uppercase;background:#ffffff10;border:1px solid #ffffff16;color:#ddd}
+.card.cia{--c1:#182d42;--c2:#101b29;--border:#3d6686;--glow:#4f9bd1}
+.card.jd{--c1:#35233f;--c2:#201728;--border:#79558b;--glow:#b56ad1}
+.card.ing{--c1:#173832;--c2:#10231f;--border:#3f7c70;--glow:#52b7a2}
+.card.otras{--c1:#3b2d20;--c2:#241c15;--border:#806444;--glow:#c99a5d}
 .card:before{content:"";position:absolute;width:180px;height:180px;border-radius:50%;right:-45px;top:-50px;background:var(--glow);filter:blur(5px);opacity:.35}
 .card:hover{transform:translateY(-5px);border-color:#ffffff35}.icon{width:66px;height:66px;border-radius:20px;display:grid;place-items:center;
 font-size:31px;background:#ffffff0e;border:1px solid #ffffff18;margin-bottom:28px}
@@ -42,10 +47,10 @@ footer{color:#7f7488;margin-top:35px;font-size:13px}
 <section class="hero"><h1>Centro de <span>Conciliaciones</span></h1>
 <p>Selecciona el módulo que necesitas. Un punto central, moderno y ágil para acceder a las herramientas de CONCILI.IA.</p></section>
 <section class="grid">
-<a class="card" style="--glow:#b319b9" href="https://mobilityado.github.io/CONCILIACIONES/"><div class="icon">⚖️</div><h2>CIA – ERPCO</h2><p>Conciliación y validación de información entre CIA y ERPCO.</p><span class="go">↗</span></a>
-<a class="card" style="--glow:#e50046" href="https://mobilityado.github.io/JD_ERPCO/"><div class="icon">🔄</div><h2>JD – ERPCO</h2><p>Acceso al módulo especializado de conciliación JD contra ERPCO.</p><span class="go">↗</span></a>
-<a class="card" style="--glow:#6e37d8" href="https://mobilityado.github.io/INGRESOS/"><div class="icon">📊</div><h2>INGRESOS</h2><p>Consulta y procesamiento del módulo de conciliación de ingresos.</p><span class="go">↗</span></a>
-<a class="card" style="--glow:#d11b88" href="https://chatgpt.com"><div class="icon">✨</div><h2>OTRAS CONCILIACIONES</h2><p>Acceso al asistente para apoyar otros procesos de conciliación.</p><span class="go">↗</span></a>
+<a class="card cia" href="https://mobilityado.github.io/CONCILIACIONES/"><div class="icon">⚖️</div><h2>CIA – ERPCO</h2><p>Conciliación y validación de información entre CIA y ERPCO.</p><span class="tag">Conciliación operativa</span><span class="go">↗</span></a>
+<a class="card jd" href="https://mobilityado.github.io/JD_ERPCO/"><div class="icon">🔄</div><h2>JD – ERPCO</h2><p>Acceso al módulo especializado de conciliación JD contra ERPCO.</p><span class="tag">Cruce y validación</span><span class="go">↗</span></a>
+<a class="card ing" href="https://mobilityado.github.io/INGRESOS/"><div class="icon">📊</div><h2>INGRESOS</h2><p>Consulta y procesamiento del módulo de conciliación de ingresos.</p><span class="tag">Control de ingresos</span><span class="go">↗</span></a>
+<a class="card otras" href="https://chatgpt.com"><div class="icon">✨</div><h2>OTRAS CONCILIACIONES</h2><p>Acceso al asistente para apoyar otros procesos de conciliación.</p><span class="tag">Asistente inteligente</span><span class="go">↗</span></a>
 </section>
 <footer>CONCILI.IA · Centro Inteligente de Conciliaciones · Mobility ADO</footer>
 </main></div></body></html>
