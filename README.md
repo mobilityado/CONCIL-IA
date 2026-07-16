@@ -1,6 +1,16 @@
-# CONCILI.IA OS - Tema Claro
-Versión con fondo blanco profesional, dock lateral morado tornasol y módulos personalizados.
+# CONCIL.IA OS
 
-Sube a GitHub Pages:
+Proyecto listo para GitHub Pages.
+
+## Archivos
 - index.html
 - mobility-ado-logo.png
+
+## Publicación
+Sube ambos archivos a la raíz de tu repositorio de GitHub Pages.
+
+## Enlaces configurados
+- CIA - ERPCO: https://mobilityado.github.io/CONCILIACIONES/
+- JD - ERPCO: https://mobilityado.github.io/JD_ERPCO/
+- INGRESOS: https://mobilityado.github.io/INGRESOS/
+- OTRAS CONCILIACIONES: https://chatgpt.com
